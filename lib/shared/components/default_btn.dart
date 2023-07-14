@@ -14,10 +14,10 @@ Container(
   width: width,
   //height: 10.0,
   color: color,
+  
   child: MaterialButton(
   onPressed: function,
-  child: Text(txt.toUpperCase(),
-  style: const TextStyle(color: Colors.white),
+  child: Text(txt.toUpperCase(), style: const TextStyle(color: Colors.white),
   ),
   ),
 );
