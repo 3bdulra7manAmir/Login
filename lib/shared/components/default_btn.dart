@@ -17,7 +17,8 @@ Container(
   
   child: MaterialButton(
   onPressed: function,
-  child: Text(txt.toUpperCase(), style: const TextStyle(color: Colors.white),
+  child: Text(txt.toUpperCase(),
+  style: const TextStyle(color: Colors.white),
   ),
   ),
 );
