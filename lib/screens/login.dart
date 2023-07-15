@@ -28,28 +28,16 @@ var formKey = GlobalKey<FormState>();
               children: [
                 const Text("Login", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 30),),
                 const SizedBox(height: 15,),
-                TextFormField(autocorrect: true,
-                enableSuggestions: true,
+                defaultTextFormField(
                 controller: emailAddressController,
                 keyboardType: TextInputType.emailAddress,
-                onFieldSubmitted: (value){
-                  print(value);
-                },
-                // onChanged: ((value){
-                //   print(value);
-                // }),
-                validator: (value){
-                  if (value != null && value.isEmpty) {return 'email address must not be empty';}
-                  return null;
-                },
-                decoration: const InputDecoration(
-                  hintText: "Email Address",
-                  labelText: "Email Address",
-                  prefixIcon: Icon(Icons.email),
-                  border: OutlineInputBorder(),
-                ),
-                //decoration: ,          
-                ),
+                onFieldSubmitted: (){print(emailAddressController);
+                return null;},
+                //validate: validate,
+                //decoration: ,
+                hintText: "Email Address",
+                labelText: "Email Address",
+                prefixIcon: Icons.email),
                 const SizedBox(height: 15,),
                   
                 TextFormField(autocorrect: true,
