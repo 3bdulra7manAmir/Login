@@ -82,7 +82,8 @@ var formKey = GlobalKey<FormState>();
                   defaultButton(
                     color: Colors.red,
                     function: (){
-                      if(formKey.currentState!.validate()) {print("error");}
+                      if(formKey.currentState!.validate())
+                      {print("Accepted");}
                     },
                     txt: 'Register',
                     width: double.infinity

@@ -6,7 +6,7 @@ Widget defaultButton({
   required double width,
   //required double height,
   required Color color,
-  required VoidCallback function,
+  required Function? Function() function,
 
 }) => 
 
