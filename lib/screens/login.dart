@@ -31,7 +31,7 @@ var formKey = GlobalKey<FormState>();
                 defaultTextFormField(
                 controller: emailAddressController,
                 keyboardType: TextInputType.emailAddress,
-                onFieldSubmitted: (){print(emailAddressController);
+                onFieldSubmitted: () {print(emailAddressController);
                 return null;},
                 //validate: validate,
                 //decoration: ,
@@ -72,6 +72,7 @@ var formKey = GlobalKey<FormState>();
                     function: (){
                       if(formKey.currentState!.validate())
                       {print("Accepted");}
+                      return null;
                     },
                     txt: 'Register',
                     width: double.infinity

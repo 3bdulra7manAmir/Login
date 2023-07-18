@@ -28,6 +28,7 @@ Widget defaultTextFormField({
   required TextEditingController controller,
   required TextInputType keyboardType,
   required Function? Function() onFieldSubmitted,
+  Function? Function()? suffixPressed,
   //required Function? Function() validate,
   //required InputDecoration decoration,
   required String hintText,
@@ -48,7 +49,7 @@ TextFormField(
   hintText: hintText,
   labelText: labelText,
   prefixIcon: Icon(prefixIcon),
-  suffixIcon: suffix != null ? Icon(suffix) : null, //or just Icon(suffix) directly
+  suffixIcon: suffix != null ? IconButton(icon: Icon(suffix), onPressed: () { suffixPressed; },) : null, //or just Icon(suffix) directly
   border: const OutlineInputBorder(),
     ),
 );
